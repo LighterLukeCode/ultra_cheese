@@ -1,0 +1,74 @@
+@import "../../scss/variables.scss";
+
+@font-face {
+  font-family: "PFDin Bold";
+  src: url("../../scss/fonts/PFDinTextCondPro-Bold.ttf") format("truetype"),
+    url("../../scss/fonts/pfdintextcondpro-bold.woff") format("woff"),
+    url("../../scss/fonts/pfdintextcondpro-bold.woff2") format("woff2");
+  font-style: normal;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 82px;
+}
+
+.nav {
+  &__menu {
+    display: flex;
+    gap: 78px;
+  }
+
+  &__link {
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 21px;
+    color: $secondary;
+    font-family: "PFDin Bold", sans-serif;
+
+    &:hover {
+      color: $thirdly;
+    }
+  }
+}
+
+.modal__items {
+  display: flex;
+  gap: 17px;
+}
+
+.modal__btn_login {
+  padding: 10px 42px;
+  font-family: "PFDin Medium";
+  font-size: 16px;
+  line-height: 21px;
+  color: $secondary;
+  cursor: pointer;
+  border: none;
+  background: none;
+  transition: background-color 0.3s;
+  border-radius: 29px;
+  background: #ffcd00;
+
+  &:hover {
+    background: #ecb200;
+  }
+}
+
+.modal__btn_register {
+  font-family: "PFDin Medium";
+  font-size: 16px;
+  line-height: 21px;
+  color: $secondary;
+  cursor: pointer;
+  border: none;
+  background: none;
+  transition: background-color 0.3s;
+  border-radius: 29px;
+
+  &:hover {
+    color: $thirdly;
+  }
+}
