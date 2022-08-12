@@ -1,12 +1,5 @@
 @import "../../scss/variables.scss";
-
-@font-face {
-  font-family: "PFDin Bold";
-  src: url("../../scss/fonts/PFDinTextCondPro-Bold.ttf") format("truetype"),
-    url("../../scss/fonts/pfdintextcondpro-bold.woff") format("woff"),
-    url("../../scss/fonts/pfdintextcondpro-bold.woff2") format("woff2");
-  font-style: normal;
-}
+@import "../../scss/fonts.scss";
 
 .header__inner {
   display: flex;
@@ -26,7 +19,7 @@
     font-size: 16px;
     line-height: 21px;
     color: $secondary;
-    font-family: "PFDin Bold", sans-serif;
+    font-family: "PFDin Medium";
 
     &:hover {
       color: $thirdly;
@@ -40,6 +33,7 @@
 }
 
 .modal__btn_login {
+  text-transform: uppercase;
   padding: 10px 42px;
   font-family: "PFDin Medium";
   font-size: 16px;
@@ -58,6 +52,7 @@
 }
 
 .modal__btn_register {
+  text-transform: uppercase;
   font-family: "PFDin Medium";
   font-size: 16px;
   line-height: 21px;
