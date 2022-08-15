@@ -12,6 +12,9 @@
 }
 
 .header {
+  &__block {
+    margin-bottom: 66px;
+  }
   &__inner {
     position: relative;
   }
@@ -50,19 +53,27 @@
     text-transform: uppercase;
     color: $thirdly;
     text-shadow: -2px 4px 0px rgba(255, 255, 255, 1);
+    margin-bottom: 61px;
   }
   &__block {
     padding-top: 116px;
     background-color: #ecb200;
+    padding-bottom: 67px;
   }
   &__content_list {
     display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
   &__content_item {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 68px;
+    width: 20%;
+    height: 150px;
 
     &:not(:last-child)::after {
       content: "";
@@ -70,11 +81,19 @@
       background-image: url("../../assets/arrow.svg");
       width: 21px;
       height: 45px;
-      top: 0;
-      right: 0;
+      top: 45%;
+      right: -28%;
+    }
+    &:last-child {
+      margin-right: 38px;
     }
   }
   &__content_text {
     text-align: center;
+    width: 91%;
+    font-size: 20px;
+    line-height: 22px;
+    color: #5b1a0d;
+    font-family: "PFDin Regular";
   }
 }
