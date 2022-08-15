@@ -16,6 +16,7 @@ const HeaderPreview = () => {
           </div>
         </div>
       </div>
+
       <div className={styles.container}>
         <div className={styles.header__content}>
           <h1 className={styles.header__title}>Нам 40 лет — вам подарки</h1>

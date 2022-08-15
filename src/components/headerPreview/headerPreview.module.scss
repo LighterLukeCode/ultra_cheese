@@ -8,6 +8,7 @@
   height: 813px;
   min-height: 100%;
   margin-bottom: 106px;
+  background-color: red;
 }
 
 .header {
@@ -39,8 +40,15 @@
     }
   }
   &__content {
+    background: linear-gradient(180deg, #ecb200 0%, #ffcf00 78.83%);
   }
   &__title {
+    font-family: "PFDin Medium";
+    font-size: 60px;
+    line-height: 46px;
     text-align: center;
+    text-transform: uppercase;
+    color: $thirdly;
+    box-shadow: 10px 5px 5px #ffffff;
   }
 }
