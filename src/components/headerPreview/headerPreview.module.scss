@@ -7,8 +7,8 @@
   background-size: contain;
   height: 813px;
   min-height: 100%;
-  margin-bottom: 106px;
-  background-color: red;
+
+  background-color: #ecb200;
 }
 
 .header {
@@ -40,7 +40,7 @@
     }
   }
   &__content {
-    background: linear-gradient(180deg, #ecb200 0%, #ffcf00 78.83%);
+    background-color: #ecb200;
   }
   &__title {
     font-family: "PFDin Medium";
@@ -49,6 +49,32 @@
     text-align: center;
     text-transform: uppercase;
     color: $thirdly;
-    box-shadow: 10px 5px 5px #ffffff;
+    text-shadow: -2px 4px 0px rgba(255, 255, 255, 1);
+  }
+  &__block {
+    padding-top: 116px;
+    background-color: #ecb200;
+  }
+  &__content_list {
+    display: flex;
+  }
+  &__content_item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      background-image: url("../../assets/arrow.svg");
+      width: 21px;
+      height: 45px;
+      top: 0;
+      right: 0;
+    }
+  }
+  &__content_text {
+    text-align: center;
   }
 }
