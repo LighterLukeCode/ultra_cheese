@@ -1,0 +1,93 @@
+@import "../../scss/variables.scss";
+
+.footer {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.phone {
+  display: flex;
+  flex-direction: column;
+}
+.information {
+  text-transform: uppercase;
+  color: #5a1404;
+  font-size: 16px;
+  line-height: 21px;
+  font-family: "PFDin Medium";
+  margin-bottom: 23px;
+}
+.number {
+  color: #e43219;
+  font-size: 31px;
+  font-weight: 900;
+  font-family: "PFDin Medium";
+  margin-bottom: 17px;
+}
+
+.copyright {
+  font-size: 12px;
+  line-height: 21px;
+  color: #5b1a0d;
+}
+
+.contacts {
+  &__list {
+    display: flex;
+
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  &__item {
+    margin-right: 70px;
+  }
+  &__link {
+    font-family: "PFDin Medium";
+    font-size: 16px;
+    line-height: 21px;
+    color: #5a1404;
+  }
+}
+.faq {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 21px;
+  color: #5a1404;
+  font-family: "PFDin Medium";
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+  }
+  &__link {
+    width: 32px;
+    height: 32px;
+    background: #ffcd00;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    vertical-align: middle;
+  }
+
+  &__item + &__item {
+    margin-left: 10px;
+  }
+  &__title {
+    font-size: 16px;
+    line-height: 21px;
+    color: #5b1a0d;
+    font-family: "PFDin Regular";
+  }
+}

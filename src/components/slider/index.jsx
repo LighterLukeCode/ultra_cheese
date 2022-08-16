@@ -9,6 +9,7 @@ import slider4 from "../../assets/slider4.png";
 import "swiper/scss";
 import "swiper/scss/navigation";
 import "swiper/scss/pagination";
+import "./swiperStyles.scss";
 
 const Slider = () => {
   return (
@@ -28,6 +29,66 @@ const Slider = () => {
           modules={[Pagination, Navigation]}
           className="mySwiper"
         >
+          <SwiperSlide className={styles.slider__item}>
+            <img src={slider1} alt="cheese1" />
+            <span>Лёгкий, брусок</span>
+            <span>180 г</span>
+          </SwiperSlide>
+          <SwiperSlide className={styles.slider__item}>
+            <img src={slider2} alt="cheese2" />
+            <span>Лёгкий, слайсы</span>
+            <span>120, 225 г</span>
+          </SwiperSlide>
+          <SwiperSlide className={styles.slider__item}>
+            <img src={slider3} alt="cheese3" />
+            <span>Сливочный, брусок</span>
+            <span>200, 300 г</span>
+          </SwiperSlide>
+          <SwiperSlide className={styles.slider__item}>
+            <img src={slider4} alt="cheese4" />
+            <span>Сливочный, слайсы</span>
+            <span>130, 250 г</span>
+          </SwiperSlide>
+          <SwiperSlide className={styles.slider__item}>
+            <img src={slider1} alt="cheese1" />
+            <span>Лёгкий, брусок</span>
+            <span>180 г</span>
+          </SwiperSlide>
+          <SwiperSlide className={styles.slider__item}>
+            <img src={slider2} alt="cheese2" />
+            <span>Лёгкий, слайсы</span>
+            <span>120, 225 г</span>
+          </SwiperSlide>
+          <SwiperSlide className={styles.slider__item}>
+            <img src={slider3} alt="cheese3" />
+            <span>Сливочный, брусок</span>
+            <span>200, 300 г</span>
+          </SwiperSlide>
+          <SwiperSlide className={styles.slider__item}>
+            <img src={slider4} alt="cheese4" />
+            <span>Сливочный, слайсы</span>
+            <span>130, 250 г</span>
+          </SwiperSlide>
+          <SwiperSlide className={styles.slider__item}>
+            <img src={slider1} alt="cheese1" />
+            <span>Лёгкий, брусок</span>
+            <span>180 г</span>
+          </SwiperSlide>
+          <SwiperSlide className={styles.slider__item}>
+            <img src={slider2} alt="cheese2" />
+            <span>Лёгкий, слайсы</span>
+            <span>120, 225 г</span>
+          </SwiperSlide>
+          <SwiperSlide className={styles.slider__item}>
+            <img src={slider3} alt="cheese3" />
+            <span>Сливочный, брусок</span>
+            <span>200, 300 г</span>
+          </SwiperSlide>
+          <SwiperSlide className={styles.slider__item}>
+            <img src={slider4} alt="cheese4" />
+            <span>Сливочный, слайсы</span>
+            <span>130, 250 г</span>
+          </SwiperSlide>
           <SwiperSlide className={styles.slider__item}>
             <img src={slider1} alt="cheese1" />
             <span>Лёгкий, брусок</span>
